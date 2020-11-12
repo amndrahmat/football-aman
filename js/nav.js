@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     };
 
-    http.open("GET", "nav.html", true);
+    http.open("GET", "pages/nav.html", true);
     http.send();
   }
 });

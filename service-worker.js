@@ -16,7 +16,7 @@ workbox.precaching.precacheAndRoute(
   [
     { url: "/index.html", revision: "1" },
     { url: "/manifest.json", revision: "1" },
-    { url: "/nav.html", revision: "1" },
+    { url: "/pages/nav.html", revision: "1" },
     { url: "/push.js", revision: "1" },
     { url: "/sw-reg.js", revision: "1" },
     { url: "/js/api.js", revision: "1" },
