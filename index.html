@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>AMAN Football</title>
+    <meta name="description" content="AMAN Football" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- manifest agar bisa jadi shorcut di smartphone -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#673ab7" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/img/icon-512.png">
+    <link rel="apple-touch-icon" href="/img/icon-512.png">
+    
+</head>
+
+<body>
+    <!-- Navigasi -->
+    <nav class="deep-purple lighten-2" role="navigation">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo right" id="logo-container"
+            >AMAN Football <i class="material-icons right">stars</i></a
+          >
+          <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+  
+          <ul class="topnav left hide-on-med-and-down"></ul>
+          <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+      </nav>
+      <!-- Akhir Navigasi -->
+    <div class="container" id="body-content">
+      <div class="preloader">
+        <div class="loading">
+          <img src="img/tenor.gif" width="180">
+          <p>Harap Tunggu</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p><a class="waves-effect" href="amandarht@gmail.com" ><i class="material-icons left">email</i>amandarht@gmail.com</a><br>
+        copyright &copy; 2020 by Amanda Rahmat Hidayat<br>
+      </p>
+    </footer>
+
+    <script src="js/materialize.min.js" defer></script>
+    <script src="js/idb.js" defer></script>
+    <script src="js/db.js" defer></script>
+    <script src="js/nav.js" defer></script>
+    <script src="sw-reg.js" defer></script>
+    <!-- <script src="service-worker.js" defer></script> -->
+    <script src="js/api.js" defer></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".preloader").fadeOut();
+      });
+    </script>
+</body>
+
+</html>
