@@ -14,20 +14,20 @@ if (workbox) {
 // mendaftarkan aset yang digunakan untuk application shell ke dalam cache sebelum aplikasi ditampilkan.
 workbox.precaching.precacheAndRoute(
   [
-    { url: "/index.html", revision: "1" },
-    { url: "/manifest.json", revision: "1" },
-    { url: "/pages/nav.html", revision: "1" },
-    { url: "/push.js", revision: "1" },
-    { url: "/sw-reg.js", revision: "1" },
-    { url: "/js/api.js", revision: "1" },
-    { url: "/js/db.js", revision: "1" },
-    { url: "/js/favorite.js", revision: "1" },
-    { url: "/js/idb.js", revision: "1" },
-    { url: "/js/materialize.min.js", revision: "1" },
-    { url: "/js/nav.js", revision: "1" },
-    { url: "/css/materialize.css", revision: "1" },
-    { url: "/css/materialize.min.css", revision: "1" },
-    { url: "/css/style.css", revision: "1" },
+    { url: "index.html", revision: "1" },
+    { url: "manifest.json", revision: "1" },
+    { url: "pages/nav.html", revision: "1" },
+    { url: "push.js", revision: "1" },
+    { url: "sw-reg.js", revision: "1" },
+    { url: "js/api.js", revision: "1" },
+    { url: "js/db.js", revision: "1" },
+    { url: "js/favorite.js", revision: "1" },
+    { url: "js/idb.js", revision: "1" },
+    { url: "js/materialize.min.js", revision: "1" },
+    { url: "js/nav.js", revision: "1" },
+    { url: "css/materialize.css", revision: "1" },
+    { url: "css/materialize.min.css", revision: "1" },
+    { url: "css/style.css", revision: "1" },
   ],
   {
     ignoreUrlParametersMatching: [/.*/],
@@ -37,7 +37,7 @@ workbox.precaching.precacheAndRoute(
 /*untuk menyimpan semua berkas halaman yang ada di dalam folder pages/ ke dalam cache
  dengan strategi stale while revalidate */
 workbox.routing.registerRoute(
-  new RegExp("/pages/"),
+  new RegExp("pages/"),
   workbox.strategies.staleWhileRevalidate({
     // mengganti nama objek cache dengan menambahkan opsi cacheName pada parameter method staleWhileRevalidate()
     cacheName: "pages",

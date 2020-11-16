@@ -11,7 +11,7 @@ if ("serviceWorker" in navigator) {
 
 function serviceWorkerRegister() {
   return navigator.serviceWorker
-    .register("/service-worker.js")
+    .register("service-worker.js")
     .then(function (registration) {
       console.log("Registrasi service worker berhasil.");
       return registration;
@@ -31,8 +31,6 @@ function requestPermission() {
         console.error("Pengguna menutup kotak dialog permintaan ijin.");
         return;
       }
-
-      // {"publicKey":"BMG0zKDU4CgO8dr7rA_jmAWkDv3taUuWvaV8ZBr5QsTN0AWA9yG7IPM4GP7C06IoolxU1bnJ3BIebkDOjanZTUo","privateKey":"NFZim5ufZkTKf6G6tfYBRoxDRLiwuQLSuHBAW3PA1CI"}
       if ("PushManager" in window) {
         navigator.serviceWorker.getRegistration().then(function (registration) {
           registration.pushManager
